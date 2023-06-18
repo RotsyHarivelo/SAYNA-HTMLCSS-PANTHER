@@ -1,0 +1,137 @@
+@import url("/assets/styles/Accueil.css");
+main .doras-milaje {
+  display: flex;
+}
+header .header-icons a {
+  margin: 30px 150px;
+  display: flex;
+  align-items: center;
+}
+main .doras-milaje .garde {
+  background-image: url("/assets/Illustrations/Enigme/Pantherenigme1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+/*le defi de doras milaje*/
+main .doras-milaje .le-defie {
+  width: 600px;
+  text-align: justify;
+  float: right;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 300px;
+}
+
+main .doras-milaje .le-defie h2 {
+  font-size: 30px;
+}
+main .doras-milaje .le-defie p {
+  width: 350px;
+  color: var(--whiteColor);
+  font-family: "cantarell";
+  font-size: 12px;
+  margin-top: 100px;
+  margin-left: 150px;
+  float: right;
+}
+main .doras-milaje .le-defie img {
+  position: relative;
+  width: 600px;
+  margin-top: -250px;
+}
+main .crypte {
+  margin: 100px 100px;
+}
+main .pantherenigme {
+  display: block;
+  position: relative;
+  margin-bottom: -400px;
+}
+main .crypte .enigme-crypte {
+  width: 70%;
+  font-family: "wakandaforever";
+}
+/*la transcription de l'alphabet*/
+main .crypte .emplacement {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+main .crypte .emplacement p {
+  font-family: "cantarell";
+  color: var(--whiteColor);
+}
+main .crypte .emplacement .alphabet {
+  text-transform: uppercase;
+}
+main .crypte div {
+  width: 45%;
+}
+/*Le savais tu ?*/
+main .crypte .lesavaistu {
+  margin-top: 200px;
+}
+main .crypte .lesavaistu .symbole {
+  position: relative;
+  width: 80%;
+  text-align: center;
+  font-size: 12px;
+  margin: 0 auto;
+}
+main .crypte .emplacement .lesavaistu img {
+  margin-top: -46%;
+  margin-left: -50px;
+  position: relative;
+  width: 120%;
+  transform: rotate(5deg);
+}
+/*Reponse de l'enigme*/
+main .crypte .resultat {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+}
+main .crypte .resultat label {
+  color: var(--Color1);
+  font-family: "cantarell";
+}
+main .crypte .resultat input {
+  margin-top: 20px;
+}
+main .crypte #reponse {
+  width: 100%;
+  padding: 10px 10px;
+  border: 1px solid var(--Color1);
+  border-radius: 38px;
+  background-color: transparent;
+}
+main .crypte #reponse::placeholder {
+  color: var(--Color1);
+  font-family: "cantarell";
+  font-size: 11px;
+}
+main .crypte .resultat .btn {
+  margin-top: 80px;
+  width: 30%;
+  padding: 10px 10px;
+  align-self: center;
+  border: none;
+  color: var(--whiteColor);
+  border-radius: 38px;
+  background-color: var(--Color1);
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "cantarell";
+}
+main .crypte .resultat .btn:hover {
+  box-shadow: 2px 2px 20px var(--Color1);
+  filter: blur(20);
+}
+main section .caractere {
+  font-family: "wakandaforever";
+  text-transform: uppercase;
+  font-family: 40px;
+}

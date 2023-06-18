@@ -1,0 +1,435 @@
+@font-face {
+  font-family: "cantarell";
+  src: url("/assets/POLICE/Cantarell-Regular.ttf");
+}
+@font-face {
+  font-family: "beyno";
+  src: url("/assets/POLICE/BEYNO.ttf");
+}
+@font-face {
+  font-family: "wakandaforever";
+  src: url("/assets/POLICE/WakandaForever-Regular.ttf");
+}
+@font-face {
+  font-family: "panthera";
+  src: url("/assets/POLICE/Panthera.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+:root {
+  --whiteColor: #ffffff;
+  --transparent: #f2cef21e;
+  --Color1: #f2cef2;
+  --color2: #9e91b7;
+  --Color3: #df99f2;
+  --Color4: #3d2da6;
+  --Color5: #07338c;
+  --Color6: #021740;
+}
+/*ajout des animations*/
+div,
+h1,
+h2,
+p,
+img,
+span,
+em,
+a {
+  animation: title 2s ease-in;
+}
+@keyframes title {
+  0% {
+    margin-left: -10%;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body {
+  font-family: "Cantarell";
+  background-image: url("/assets/Illustrations/All_pages/arrière_plan.png");
+  background-size: cover;
+}
+
+header .header-icons a {
+  margin: 30px 150px;
+  display: flex;
+  align-items: center;
+}
+.voirplus {
+  color: #ffffff;
+}
+header .header-icons:hover {
+  filter: brightness(0) saturate(100%) invert(17%) sepia(85%) saturate(4541%)
+    hue-rotate(269deg) brightness(94%) contrast(90%);
+  cursor: pointer;
+}
+/*partie Nav*/
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  float: right;
+  width: 35%;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "beyno";
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+header nav ul li a.active {
+  text-decoration: underline;
+  filter: brightness(0) saturate(100%) invert(17%) sepia(85%) saturate(4541%)
+    hue-rotate(269deg) brightness(94%) contrast(90%);
+}
+
+h1 {
+  font-family: "panthera";
+  font-size: 68px;
+  color: var(--color2);
+}
+
+h2:not(footer .social-media h2) {
+  font-family: "beyno";
+  font-size: 32px;
+  color: var(--color2);
+}
+h2,
+p {
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+/*les Barres*/
+.barre {
+  margin-top: -450px;
+  position: absolute;
+  display: flex;
+}
+.barre .grand {
+  width: 4px;
+  height: 700px;
+  background-color: var(--color2);
+  margin-left: 30px;
+}
+.barre .petit {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  align-items: center;
+}
+.barre .petit .taille {
+  width: 4px;
+  height: 510px;
+  background-color: var(--color2);
+}
+.barre .petit .reseaux {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.barre .petit .reseaux img {
+  margin-top: 21px;
+  cursor: pointer;
+}
+.barre .petit .reseaux img:hover {
+  filter: sepia(100%) invert(100%) brightness(1000%);
+}
+
+/* section Black Panther */
+main .panther {
+  width: 100%;
+  height: 90vh;
+  background-image: url("/assets/Illustrations/Accueil/Pantherhome1..png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 500px 0px;
+}
+
+.panther .black-panther {
+  width: 45%;
+  margin-top: 15%;
+  margin-left: 10%;
+}
+.panther .black-panther .black-panther-text {
+  width: 90%;
+  text-align: justify;
+}
+.panther .black-panther .black-panther-text p {
+  width: 70%;
+  font-size: 12px;
+  color: var(--whiteColor);
+  font-family: "cantarell";
+}
+
+.panther .personnage .carte {
+  margin-left: 100px;
+  margin-top: 300px;
+  display: flex;
+  background-color: var(--Color6);
+  height: 40vh;
+  align-items: center;
+  padding-left: 20px;
+}
+.pantherhome3-4 {
+  height: 100%;
+}
+.pantherhome2 {
+  width: 300px;
+}
+.panther .personnage .carte #text {
+  padding: 0px 10px;
+}
+.panther .carte .personnage-text {
+  font-family: "cantarell";
+  text-align: justify;
+  font-size: 12px;
+  font-weight: normal;
+  color: var(--whiteColor);
+}
+/*Section Synopsis */
+.tchalla {
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  margin-top: 30%;
+  margin-left: 15%;
+  justify-content: space-between;
+}
+.container .tchalla-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.container .tchalla-text p {
+  text-align: justify;
+  color: var(--whiteColor);
+  font-family: "cantarell";
+  font-size: 12px;
+  font-weight: normal;
+}
+/*Section biographie*/
+.container .tchalla-biographie {
+  width: 50%;
+  margin-left: 10px;
+}
+.container .tchalla-biographie .background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 22%;
+}
+.container .tchalla-biographie .background img {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  margin-top: -10px;
+  z-index: 0;
+}
+.container .tchalla-biographie .wiki {
+  margin-top: -250px;
+  width: 70%;
+  padding-top: 250px;
+  padding-bottom: 40px;
+  padding-left: 50px;
+  background-color: var(--whiteColor);
+  border-radius: 2%;
+}
+.container .tchalla-biographie h3 {
+  text-align: center;
+  font-size: 26px;
+}
+.container .tchalla-biographie .wiki .buttons {
+  width: 90%;
+  margin: 0 auto;
+}
+.container .tchalla-biographie .wiki .buttons button {
+  background-color: var(--Color4);
+  color: var(--whiteColor);
+  border-radius: 10px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.container .tchalla-biographie .wiki .biographie p {
+  font-family: "cantarell";
+  font-size: 16px;
+}
+.container .tchalla-biographie .wiki .biographie p .bold {
+  font-weight: bold;
+}
+.container .tchalla-biographie .wiki .biographie em {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+}
+.container .tchalla-biographie .poster {
+  display: block;
+  text-align: center;
+  margin-top: 96%;
+  margin-bottom: 80px;
+}
+/*Section formulaire */
+main .formulaire {
+  background-image: url("/assets/Illustrations/Accueil/Pantherhome7.png");
+  margin-top: -40%;
+  background-size: contain;
+  width: 100%;
+  height: 100vh;
+}
+main .formulaire .display {
+  padding: 40px 10px;
+  border-radius: 30%;
+  margin: 0 auto;
+  width: 60%;
+  background: linear-gradient(
+    to bottom,
+    var(--whiteColor) 1%,
+    var(--transparent)
+  );
+}
+main .formulaire .display .login {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+}
+main .formulaire .display .login h3 {
+  margin: 0;
+  font-family: "cantarell";
+  font-weight: bold;
+  font-size: 36px;
+}
+main .formulaire .display .login p {
+  margin: 0;
+  font-family: "cantarell";
+}
+main .formulaire .display .login .input {
+  margin: 10px 0;
+  padding: 20px 10px;
+  border: 1px solid var(--Color6);
+  border-radius: 38px;
+  width: 80%;
+  background-color: transparent;
+}
+main .formulaire .display .login textarea {
+  padding: 20px 10px;
+  width: 80%;
+  border: 1px solid var(--Color6);
+  border-radius: 30px;
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+main .formulaire .display .login .btn {
+  width: 174px;
+  height: 54px;
+  margin: 0 auto;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 38px;
+  background-color: var(--Color1);
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "cantarell";
+}
+main .formulaire .display .login .btn:hover {
+  box-shadow: 0 0 20px var(--Color6);
+  filter: blur(20);
+}
+footer {
+  background-image: url("/assets/Illustrations/All_pages/back_footer.png");
+  background-size: cover;
+}
+/*Section FOOTER*/
+.footer {
+  display: flex;
+}
+footer .marvel {
+  padding: 20px 100px;
+  margin-top: 150px;
+}
+footer .social-media {
+  justify-content: space-between;
+  display: flex;
+}
+footer .social-media .info {
+  margin-top: 150px;
+}
+footer .social-media .info .pages {
+  margin-top: 20px;
+}
+footer .social-media .info .pages p a {
+  font-family: "cantarell";
+  color: var(--whiteColor);
+  text-decoration: none;
+}
+footer .social-media .info .pages p a:hover {
+  text-decoration: underline;
+}
+footer .social-media .icons .contact {
+  margin-top: 160px;
+  margin-left: 22px;
+}
+footer .social-media .icons .icon-reseaux {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+footer .social-media div {
+  margin: 0 30px;
+}
+footer .social-media .icon-reseaux {
+  display: flex;
+  padding: 0;
+  margin-top: -20px;
+}
+footer .social-media h2 {
+  color: var(--whiteColor);
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 12px;
+}
+footer .social-media .icon-reseaux img {
+  cursor: pointer;
+  margin: 15px;
+}
+footer .social-media .icon-reseaux img:hover,
+footer .marvel:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(110%);
+}
+footer .sayna-footer {
+  position: relative;
+  left: -55%;
+  top: -50%;
+}
+footer .politique {
+  position: relative;
+  color: var(--whiteColor);
+  margin-left: 50%;
+  margin-top: 100px;
+  top: -150px;
+}
+footer .point {
+  font-size: 30px;
+  margin: 5px;
+}
