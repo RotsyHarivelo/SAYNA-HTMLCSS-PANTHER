@@ -101,6 +101,9 @@ main .crypte .resultat label {
 main .crypte .resultat input {
   margin-top: 20px;
 }
+main .crypte .resultat input[type="text"] {
+  color: white;
+}
 main .crypte #reponse {
   width: 100%;
   padding: 10px 10px;
